@@ -1,6 +1,10 @@
 apply plugin: 'java'
 apply plugin: 'maven'
 
+plugins {
+  id "org.sonarqube" version "2.7"
+}
+
 group = 'com.github.jitpack'
 
 sourceCompatibility = 1.8 // java 8
@@ -49,6 +53,3 @@ wrapper {
     distributionType = Wrapper.DistributionType.ALL
 }
 
-plugins {
-  id "org.sonarqube" version "2.7"
-}
