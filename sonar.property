@@ -1,0 +1,8 @@
+sonar.projectKey=gradle-simple1
+sonar.projectName=<>
+sonar.projectBaseDir=.
+sonar.sources=.
+sonar.exclusions=.build/**
+ 
+sonar.analysis.mode=preview
+sonar.github.repository=https://github.com/tatsuakimitani/gradle-simple.git
