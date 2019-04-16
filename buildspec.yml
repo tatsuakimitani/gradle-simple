@@ -11,4 +11,4 @@ phases:
       # - export PULL_REQUEST_ID=`echo ${CODEBUILD_SOURCE_VERSION} | sed -e 's/pr\///'`
       # - sonar-scanner -Dsonar.login=${SONARQUBE_TOKEN} -Dsonar.github.oauth=${GITHUB_TOKEN} -Dsonar.github.pullRequest=${PULL_REQUEST_ID} -Dsonar.host.url=${SONARQUBE_ENDPOINT}
       # - mvn package sonar:sonar -Dsonar.projectKey=sonarqube-test -Dsonar.login=${SONARQUBE_TOKEN}  -Dsonar.host.url=${SONARQUBE_ENDPOINT}
-      - ./gradlew sonarqube   -Dsonar.projectKey=gradle-simple1   -Dsonar.host.url=http://52.68.49.41:9000   -Dsonar.login=f8ce3391475c6e6cac7dfba86c037d1d9b949f2a
+      - ./gradlew sonarqube   -Dsonar.projectKey=$SONAEQUBE_PROJECTKEY   -Dsonar.host.url=$SONAEQUBE_HOST   -Dsonar.login=$SONAEQUBE_TOKEN
